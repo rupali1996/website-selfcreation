@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>R7Ethics</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="main">
+            <div class="logo">
+                <img src="assets/images/title3.jpg" alt="logo" class="logo" id="logo">
+            </div>
+                <ul>
+                    <li class=""><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Carrier Opportunities</a></li>
+                    <li><button onclick="openForm()">Login</button></li>
+                </ul>
+            </div>
+            <div class="title">
+                <h1>SELF CREATIONS</h1>
+            </div>
+            <div class="button">
+                <a href="#" class="btn">WATCH VIDEO</a>
+                <a href="#" class="btn">LEARN MORE</a>
+            </div>
+        </header>
+        <div class="head1">
+            <h1>WHAT WE ARE ?</h1>
+        <div class="row1">
+                <div class="column">
+                    <img src="assets/images/simg2.png"/>
+                    <div class="contents">
+                        <p>This is first self creations topic </p>
+                        <button class="btn1">View More..</button>
+                    </div>
+                </div>                      
+                <div class="column">
+                    <img src="assets/images/simg1.png"/>
+                    <div class="contents">
+                        <p>This is first self creations topic </p>
+                        <button class="btn1">View More..</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="assets/images/simg3.png"/>
+                    <div class="contents">
+                        <p>This is first self creations topic </p>
+                        <button class="btn1">View More..</button>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="assets/images/simg4.png"/> 
+                    <div class="contents">
+                        <p>This is first self creations topic </p>
+                        <button class="btn1">View More..</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<div class="form-open" id="myForm">
+    <form action="" class="form-container">
+        <h1>Login</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter your Email" name="email" required/>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter your Password" name="password" required/>
+
+        <button class="btn" type="submit">Login</button>
+        <button class="btn cancel" onclick="closeForm()" type="cancel">Cancel</button>
+    </form>
+</div>
+<div class="head2">
+    <div class="welcome">
+        <h1>WELCOME TO SELF CREATIONS</h1>
+    </div>
+    <div class="row2">
+        <div class="column1">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></p>
+        </div>
+        <div class="column1">
+            <img src="assets/images/simg6.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="slideShow-container">
+    <div class="mySlides fade">
+        <img src="assets/images/e1.png">
+    </div>
+    <div class="mySlides fade">
+        <img src="assets/images/e2.png">
+    </div>
+    <div class="mySlides fade">
+        <img src="assets/images/e3.png">
+    </div>
+    <div class="mySlides fade">
+        <img src="assets/images/e4.jpg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<footer>
+        <p>@SELFCREATION THEME MADE BY R7Ethics</p>
+</footer>
+
+<script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+</script>
+
+<!-- slideshow script -->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// incrementing index by one with plusSlides event
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n){
+    var i;
+    var slides = document.getElementsByClassName("mySlides"); 
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for(i=0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
+</script>
+</body>
+</html>
